@@ -36,8 +36,15 @@ q()
 
 ## What do you find in the project?
 1. Directories
+  - Data:
+    * synthetic
+    * real_application
+    * ground_truth
+    * toy_example
 
 2. Jupyter notebooks
+  * OCoClus-1 for synthetic data
+  * OCoClus-2 for real data
 
 ## Usage
 
