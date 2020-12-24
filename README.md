@@ -41,10 +41,12 @@ q()
     * real_application
     * ground_truth
     * toy_example
+  - OutputAnalysis: It has the clustering output files per simulation for each synthetic dataset.
+  - xmeasures: It has the ground-truth and clustering output files used for evaluation.
 
 2. Jupyter notebooks
-  * OCoClus-1 for synthetic data
-  * OCoClus-2 for real data
+  * overlapped_coclustering_synthetic for synthetic data experiment.
+  * FILE-XXX for real data experiment
 
 ## Usage
 
