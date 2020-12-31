@@ -1,99 +1,45 @@
-# OCoClus - Overlapped Co-Clustering method
+# OCoClus - <i>O</i>verlapped <i>Co</i>-<i>Clus</i>tering method
 
 This is a project with the OCoClus implementation that finds non-overlapped and overlapped co-clusters.
 Source code of the paper **A Frequent Pattern Based Approach for Mining Overlapped Co-clusters in Binary Data**, accepted for publication in ...
 
 \[ [publication](https://#) ] \[ [preprint](./reference/preprint.pdf) ] \[ [bibtex](./reference/bibliography.bib) ]
 
-Dummy text bellow ...
-
 ## Setup
-A. dependencies version
+A. Packages and dependencies version
   - Pandas: 0.25.1
   - Numpy: 1.16.4
+  - sklearn: 0.21.2
   - Python: 3.7.1 | package by conda-forge [MSC v.1900 64 bit (AMD64)]
   - IPython: 7.8.0
   - IPython genutils: 0.2.0
 
-```Shell
-pip install -r ./dist/automatize/requirements.txt
-```
-
-Install R, and the dependent packages. To enter the R environment:
-
-```Shell
-sudo apt-get install r-base
-R
-```
-
-Install `data.table` and `dplyr` packages, and exit.
-
-```R
-install.packages("data.table")
-install.packages("dplyr")
-q()
-```
+Please, install the minor dependencies that your jupyter notebook may require.
 
 ## What do you find in the project?
 1. Directories
-  - Data:
-    * synthetic
-    * real_application
-    * ground_truth
-    * toy_example
+  - Data: It contains the datasets
+    * synthetic: It has the synthetic datasets used in the experimental analysis.
+    * real_application: It has the real datasets used to exemplify the efficacy of our method.
+    * toy_example: It has two simple files that the reader can use to play with our method.
   - OutputAnalysis: It has the clustering output files per simulation for each synthetic dataset.
   - xmeasures: It has the ground-truth and clustering output files used for evaluation.
+  - Supplementary material: It has the clustering outputs of each method used to compute the evaluation scores from the xmeasures project. These scores are reported in the paper. Moreover, we provide the xlsx files with the evaluation scores obtained in each run.
 
 2. Jupyter notebooks
-  * overlapped_coclustering_synthetic for synthetic data experiment.
-  * FILE-XXX for real data experiment
+  * overlapped_coclustering_synthetic.ipynb: It is the OCoClus method. The reader can run it for synthetic and real data experiment.
+  * experimental_baselines.ipynb: In this notebook, we provide the methods reported in the paper used in comparison with our method.
 
 ## Usage
 
-### 1. 
+Please, install all dependencies, run the support functions in the block cells, then run the main method.
 
-```Shell
--curpath "$BASIC_PATH" 
--respath "$RESULT_PATH" 
--descfile "$DESC_FILE"  
--version hiper
--nt 8
-```
-
-
-Where:
-- `BASIC_PATH`: The path for the input CSV training and test files.
-- `RESULT_PATH`: The destination folder for CSV results files.
-- `DESC_FILE`: Path for the descriptor file. File that describes the dataset attributes and similarity measures.
-- `-version`: Method to run (hiper, hiper-pvt, ...)
-- `-nt`: Number of threads
-
-    
-### 2. For instance:
-
-To run the XXX you can run the java code with the following default entries as example:
-
-
-```Shell
-java -Xmx80G -jar HIPERMovelets.jar 
--curpath "$BASIC_PATH" -respath "$RESULT_PATH" -descfile "$DESC_FILE" 
--version hiper -nt 8 -ed true -samples 1 -sampleSize 0.5 -medium "none" -output "discrete" -lowm "false" -ms 1 -Ms -3 | tee -a "output.txt"
-```
-
-
-This will run with 80G memory limit, 8 threads, and save the output to the file output.txt`. 
-
-It is the same as (without the output file):
-
-
-```Shell
-java -Xmx80G -jar HIPERMovelets.jar 
--curpath "$BASIC_PATH" -respath "$RESULT_PATH" -descfile "$DESC_FILE" 
--version hiper -nt 8
-```
 
 # License
 
+- MIT
+
 
 # Acknowledgments
+
 This work was financed  by the Brazilian agencies Coordenação de Aperfeiçoamento de Pessoal de Nivel Superior - CAPES, Finance code 001, and Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq.
