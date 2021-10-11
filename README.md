@@ -1,7 +1,7 @@
 # OCoClus - <i>O</i>verlapped <i>Co</i>-<i>Clus</i>tering method
 
 This is a project with the OCoClus implementation that finds non-overlapped and overlapped co-clusters.
-Source code of the paper **A Frequent Pattern Based Approach for Mining Overlapped Co-clusters in Binary Data**, accepted for publication in ...
+Source code of the paper **A Co-occurrence Based Approach for MiningOverlapped Co-clusters in Binary Data**, accepted for publication in ...
 
 \[ [publication](https://#) ] \[ [preprint](./reference/preprint.pdf) ] \[ [bibtex](./reference/bibliography.bib) ]
 
