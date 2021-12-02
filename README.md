@@ -3,7 +3,7 @@
 This is a project with the OCoClus implementation that finds non-overlapped and overlapped co-clusters.
 Source code of the paper **A Co-occurrence Based Approach for Mining Overlapped Co-clusters in Binary Data**, accepted for publication in BRACIS-21.
 
-[Access the paper here!](https://link.springer.com/chapter/10.1007%2F978-3-030-91702-9_25){target="_blanck"} <!--\[ [preprint](./reference/preprint.pdf) ] \[ [bibtex](./reference/bibliography.bib) ]-->
+[Access the paper here!](https://link.springer.com/chapter/10.1007%2F978-3-030-91702-9_25) <!--\[ [preprint](./reference/preprint.pdf) ] \[ [bibtex](./reference/bibliography.bib) ]-->
 
 ## Setup
 A. Packages and dependencies version
